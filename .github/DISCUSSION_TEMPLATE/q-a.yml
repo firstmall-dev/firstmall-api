@@ -9,6 +9,22 @@ body:
         - 요청/응답 예시의 민감한 값은 `***`로 마스킹해 주세요.
         - 문의하려는 API 종류를 우측 레이블로 지정해 주세요.
   - type: input
+    id: service-name
+    attributes:
+      label: 운영 서비스명
+      description: 운영 중인 서비스(앱) 이름
+      placeholder: "예: ○○ 리뷰 연동 앱"
+    validations:
+      required: true
+  - type: input
+    id: service-domain
+    attributes:
+      label: 운영 도메인
+      description: 문제가 발생한 쇼핑몰 도메인 또는 API 도메인 (개인정보가 포함된 URL은 제외)
+      placeholder: "예: https://sample.firstmall.kr"
+    validations:
+      required: true
+  - type: input
     id: endpoint
     attributes:
       label: API 엔드포인트
